@@ -4,3 +4,4 @@ RUN rm -rf /usr/share/nginx/html/index.html
 ADD https://github.com/ArunramRajasekaran/dockerfile/blob/main/COPY/Dockerfile /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
 CMD ["nginx", "-g", "daemon off"]
+RUN sleep 10
